@@ -1,5 +1,3 @@
-import { createInterface } from 'node:readline';
-import { getCommands } from './commands.js';
 import { State } from './state.js';
 
 export async function startREPL(state: State) {
@@ -12,7 +10,7 @@ export async function startREPL(state: State) {
             console.log("Unknown command");
         } else {
             try {
-                await command.callback(state);
+                await command.callback(state, ...args);
             } catch (err) {
                 console.log(`Error running command ${command.name}: ${err}`);
             }
