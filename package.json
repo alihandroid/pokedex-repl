@@ -1,0 +1,27 @@
+{
+  "name": "pokedex-repl",
+  "version": "1.0.0",
+  "description": "boot.dev Build a Pokedex project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/main.js",
+    "dev": "npx tsc && node dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alihandroid/pokedex-repl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alihandroid/pokedex-repl/issues"
+  },
+  "homepage": "https://github.com/alihandroid/pokedex-repl#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "typescript": "^5.8.3"
+  }
+}
